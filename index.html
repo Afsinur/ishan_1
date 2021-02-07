@@ -18,7 +18,7 @@
     <link rel="stylesheet" href="css/main.css" />
 
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
-    
+    <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
     <!--[if lt IE 8]>
@@ -29,7 +29,43 @@
       </p>
     <![endif]-->
     <div id="app">
-      <p>test</p>
+      <!--Nav-->
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-2">
+            <a href="index.html">
+              <img
+                style="width: 110px"
+                src="img/nav/AppLab@2x.png"
+                alt="AppLab"
+              />
+            </a>
+          </div>
+          <div class="col-sm-10">
+            <ul class="nav justify-content-end">
+              <li class="nav-item">
+                <a class="nav-link active" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Key Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testiminial</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">FAQ</a>
+              </li>
+              <li class="nav-item">
+                <a id="tryForFree" class="nav-link" href="#">Try for free</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      
     </div>
 
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
