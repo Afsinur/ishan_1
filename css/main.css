@@ -9,7 +9,6 @@
 }
 .nav {
   display: flex;
-  justify-content: flex-end;
   align-items: center;
 }
 .row {
@@ -33,4 +32,62 @@
 }
 #tryForFree:hover {
   background: darkblue;
+}
+/*@media screen and (max-width: 991px) {
+  .row {
+    background: darkblue !important;
+  }
+}*/
+.section1 {
+  background: url("../img/section1/Folder\ 5.png");
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-size: cover;
+}
+.section1 > .container {
+}
+.choiceApp {
+  position: relative;
+  background-color: rgb(220, 227, 230);
+  padding: 5px 5px 5px 30px;
+  margin-left: 5px;
+  font-weight: 500;
+  color: #303030;
+  border-radius: 25px;
+  width: 70%;
+}
+.choiceApp > span {
+  position: absolute;
+  left: -8px;
+}
+.choiceApp > span > img {
+  width: 35px;
+}
+.plf {
+  padding-left: 8%;
+  margin-top: 8%;
+}
+.plf > h1 {
+  font-weight: 700;
+  font-size: 50px;
+}
+.inctodoApp {
+  font-weight: 500;
+  color: #505050;
+}
+.tryFreeAndWatch > li {
+  padding: 10px;
+  list-style: none;
+  font-weight: 500;
+  color: blue;
+}
+.tryFreeAndWatch > li:first-child {
+  background-color: blue;
+  color: #fff;
+  border-radius: 25px;
+  padding: 10px 30px;
+}
+.tryFreeAndWatch > li:first-child:hover {
+  background-color: darkblue;
 }
