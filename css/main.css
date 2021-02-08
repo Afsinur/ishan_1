@@ -81,13 +81,16 @@
   color: blue;
 }
 .tryFreeAndWatch > li:first-child {
+  padding: 0 !important;
+}
+.tryFreeAndWatch > li:first-child a {
   background-color: blue;
   color: #fff;
   border-radius: 25px;
   padding: 10px 30px;
   cursor: pointer;
 }
-.tryFreeAndWatch > li:first-child:hover {
+.tryFreeAndWatch > li:first-child:hover a {
   background-color: darkblue;
 }
 .tryFreeAndWatch > li > a {
@@ -154,6 +157,7 @@
 }
 .sec4imgCmon div h5 {
   padding-bottom: 5px;
+  font-weight: 700;
 }
 .sec4imgCmon div:nth-child(1) h5 {
   color: #f55767 !important;
@@ -167,4 +171,62 @@
 .sec4imgCmon div p {
   color: #606060;
   font-weight: 500;
+}
+/*6. section5*/
+.sec5ImgCont img {
+  width: 100%;
+}
+.sec5RowCont h2 {
+  font-weight: 700;
+  color: #303852;
+  padding-bottom: 5px;
+}
+.sec5RowCont p {
+  color: #606060;
+  font-weight: 500;
+}
+.sec5RowCont a {
+  align-self: flex-start;
+}
+.sec5RowCont button.Sec5learnMoreBtn {
+  border: none;
+  padding: 10px 25px;
+  background-color: blue;
+  color: #fff;
+  font-weight: 500;
+  border-radius: 25px;
+  cursor: pointer;
+}
+.sec5RowCont button.Sec5learnMoreBtn a {
+  color: #fff;
+  text-decoration: none;
+}
+.sec5RowCont button.Sec5learnMoreBtn:hover {
+  background-color: darkblue;
+}
+/*7. section6*/
+.sec6-txt-cont {
+  padding-left: 25%;
+  padding-right: 25%;
+}
+.sec6-txt-cont h2 {
+  font-weight: 700;
+  color: #303852;
+  padding-bottom: 10px;
+}
+.sec6-txt-cont p,
+.cmnUnderSec6 p {
+  color: #606060;
+  font-weight: 500;
+}
+.sec6ComonCont h5 {
+  color: #303852;
+  font-weight: 700;
+  padding: 25px 0 5px 0;
+}
+.cmnUnderSec6 {
+  padding: 3% 8%;
+}
+.cmnUnderSec6 div {
+  padding: 1% 2%;
 }
