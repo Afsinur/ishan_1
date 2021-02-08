@@ -7,6 +7,12 @@
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
+/*
+1. Nav
+2. Section1
+3. section2
+*/
+/*1. Nav*/
 .nav {
   display: flex;
   align-items: center;
@@ -20,7 +26,7 @@
   font-weight: 500;
   color: #303030;
 }
-.container {
+.navCnt1 {
   padding-top: 80px;
 }
 #tryForFree {
@@ -33,19 +39,12 @@
 #tryForFree:hover {
   background: darkblue;
 }
-/*@media screen and (max-width: 991px) {
-  .row {
-    background: darkblue !important;
-  }
-}*/
+/*2. Section1*/
 .section1 {
   background: url("../img/section1/Folder\ 5.png");
   width: 100%;
-  height: 100vh;
   background-position: center;
   background-size: cover;
-}
-.section1 > .container {
 }
 .choiceApp {
   position: relative;
@@ -55,7 +54,7 @@
   font-weight: 500;
   color: #303030;
   border-radius: 25px;
-  width: 70%;
+  width: 85%;
 }
 .choiceApp > span {
   position: absolute;
@@ -65,8 +64,7 @@
   width: 35px;
 }
 .plf {
-  padding-left: 8%;
-  margin-top: 8%;
+  padding: 0 0 0 8%;
 }
 .plf > h1 {
   font-weight: 700;
@@ -87,7 +85,25 @@
   color: #fff;
   border-radius: 25px;
   padding: 10px 30px;
+  cursor: pointer;
 }
 .tryFreeAndWatch > li:first-child:hover {
   background-color: darkblue;
+}
+.tryFreeAndWatch > li > a {
+  text-decoration: none;
+}
+.tryFreeAndWatch > li:first-child > a {
+  color: #fff;
+}
+#mobileImgStyle {
+  width: 80%;
+}
+.section1Cnt1 {
+  padding-top: 25px;
+}
+/*3. section2*/
+.trust_likeContainer img {
+  width: 160px;
+  padding: 25px;
 }
