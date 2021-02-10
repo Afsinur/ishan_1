@@ -545,11 +545,12 @@
 .ulOfSec10 h5 {
   color: #303852;
   font-weight: 700;
+  margin-right: 10px;
 }
 
 /*12. section11*/
 
-.sec8-txt-cont1 h5 {
+.sec8-txt-cont1 h2 {
   color: #303852;
   font-weight: 700;
 }
@@ -557,4 +558,22 @@
 .sec8-txt-cont1 p {
   color: #606060;
   font-weight: 500;
+}
+
+/*13. section12*/
+
+.section12 ul:nth-child(3) img {
+  width: 150px;
+}
+
+.section12 ul:nth-child(2) li a:hover {
+  filter: brightness(0.5);
+}
+
+.section12 {
+  background: url("../img/section12/footer\ bg.png");
+}
+
+.bgFooter1 img:nth-child(1) {
+  width: 100px;
 }
