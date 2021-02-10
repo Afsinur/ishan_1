@@ -25,8 +25,13 @@
     <script src="https://unpkg.com/vue@next"></script>
   </head>
   <body>
-    <div id="app">
-      <!--Nav-->
+    <!-- Preloader -->
+    <div id="preloader">
+      <div id="loader"></div>
+    </div>
+    <!-- App -->
+    <div id="app" v-if="section1.markCheck == 1">
+      <!-- Nav -->
       <div class="container navCnt1">
         <div class="row">
           <div
@@ -74,7 +79,7 @@
           </div>
         </div>
       </div>
-      <!--Nav collapsable -->
+      <!-- Nav collapsable -->
       <div class="collapse" id="collapseExample">
         <ul class="nav d-flex flex-column">
           <li class="nav-item">
