@@ -24,169 +24,215 @@
     <link rel="stylesheet" href="css/main.css" />
     <script src="https://unpkg.com/vue@next"></script>
   </head>
+
   <body>
     <!-- Preloader -->
     <div id="preloader">
       <div id="loader"></div>
     </div>
     <!-- App -->
-    <div id="app" v-if="section1.markCheck == 1">
-      <!-- Nav -->
-      <div class="container navCnt1">
-        <div class="row">
-          <div
-            class="col-sm-12 d-flex justify-content-between align-items-center"
-          >
-            <a class="navbar-brand" href="index.html">
-              <img
-                style="width: 110px"
-                src="img/nav/AppLab@2x.png"
-                alt="AppLab"
-              />
-            </a>
+    <div id="app">
+      <div v-if="section1.markCheck == 1">
+        <!-- Nav -->
+        <div class="container navCnt1">
+          <div class="row">
+            <div
+              class="col-sm-12 d-flex justify-content-between align-items-center"
+            >
+              <a class="navbar-brand" href="index.html">
+                <img
+                  style="width: 110px"
+                  src="img/nav/AppLab@2x.png"
+                  alt="AppLab"
+                />
+              </a>
 
-            <ul class="nav d-none d-lg-flex">
-              <li class="nav-item">
-                <a class="nav-link active" href="#">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Key Features</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Pricing</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">Testiminial</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">FAQ</a>
-              </li>
-              <li class="nav-item">
-                <a id="tryForFree" class="nav-link" href="#">Try for free</a>
-              </li>
-            </ul>
-            <!-- Collapse -->
-            <button
-              class="btn btn-primary d-lg-none"
-              type="button"
-              data-toggle="collapse"
-              data-target="#collapseExample"
-              aria-expanded="false"
-              aria-controls="collapseExample"
-            >
-              <span class="material-icons"> menu </span>
-            </button>
-          </div>
-        </div>
-      </div>
-      <!-- Nav collapsable -->
-      <div class="collapse" id="collapseExample">
-        <ul class="nav d-flex flex-column">
-          <li class="nav-item">
-            <a class="nav-link active" href="#">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Key Features</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Pricing</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Testiminial</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">FAQ</a>
-          </li>
-          <li class="nav-item">
-            <a id="tryForFree" class="nav-link" href="#">Try for free</a>
-          </li>
-        </ul>
-      </div>
-      <!-- Best app for your modern lifestyle -->
-      <div class="section1">
-        <div class="container section1Cnt1">
-          <div class="row">
-            <div
-              class="plf col-sm-12 col-md-6 d-flex flex-column align-items-center"
-            >
-              <p
-                class="choiceApp d-flex justify-content-between align-items-center align-self-start"
-              >
-                <span><img src="img/section1/Folder 1.png" alt="baz1" /></span>
-                #1 Editors Choice App of 2020
-              </p>
-              <h1>Best app for your modern lifestyle</h1>
-              <p class="inctodoApp">
-                Increase productivity with a simple to-do app.App for managing
-                your parsonal budget
-              </p>
-              <ul
-                class="tryFreeAndWatch d-flex justify-content-start align-items-center align-self-start"
-              >
-                <li><a href="">Try for free</a></li>
-                <li><a href="">Watch demo video</a></li>
+              <ul class="nav d-none d-lg-flex">
+                <li class="nav-item">
+                  <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Key Features</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Testiminial</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a id="tryForFree" class="nav-link" href="#">Try for free</a>
+                </li>
               </ul>
-            </div>
-            <div
-              class="plf col-sm-12 col-md-6 d-flex flex-column align-items-center"
-            >
-              <img
-                id="mobileImgStyle"
-                src="img/section1/Vector Smart Object.png"
-                alt="Responsive image_mobile"
-              />
+              <!-- Collapse -->
+              <button
+                class="btn btn-primary d-lg-none"
+                type="button"
+                data-toggle="collapse"
+                data-target="#collapseExample"
+                aria-expanded="false"
+                aria-controls="collapseExample"
+              >
+                <span class="material-icons"> menu </span>
+              </button>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Trusted by companies like -->
-      <div class="section2 py-5">
-        <div class="container py-5">
-          <div class="row">
-            <div class="col-sm-12">
-              <p class="text-center font-weight-bold text-secondary">
-                Trusted by companies like
-              </p>
-            </div>
-            <div class="col-sm-12">
+        <!-- Nav collapsable -->
+        <div class="collapse" id="collapseExample">
+          <ul class="nav d-flex flex-column">
+            <li class="nav-item">
+              <a class="nav-link active" href="#">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Key Features</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Testiminial</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">FAQ</a>
+            </li>
+            <li class="nav-item">
+              <a id="tryForFree" class="nav-link" href="#">Try for free</a>
+            </li>
+          </ul>
+        </div>
+        <!-- Best app for your modern lifestyle -->
+        <div class="section1">
+          <div class="container section1Cnt1">
+            <div class="row">
               <div
-                class="trust_likeContainer d-flex align-items-center justify-content-center flex-md-row flex-wrap"
+                class="plf col-sm-12 col-md-6 d-flex flex-column align-items-center"
+              >
+                <p
+                  class="choiceApp d-flex justify-content-between align-items-center align-self-start"
+                >
+                  <span
+                    ><img src="img/section1/Folder 1.png" alt="baz1"
+                  /></span>
+                  #1 Editors Choice App of 2020
+                </p>
+                <h1>Best app for your modern lifestyle</h1>
+                <p class="inctodoApp">
+                  Increase productivity with a simple to-do app.App for managing
+                  your parsonal budget
+                </p>
+                <ul
+                  class="tryFreeAndWatch d-flex justify-content-start align-items-center align-self-start"
+                >
+                  <li><a href="">Try for free</a></li>
+                  <li><a href="">Watch demo video</a></li>
+                </ul>
+              </div>
+              <div
+                class="plf col-sm-12 col-md-6 d-flex flex-column align-items-center"
               >
                 <img
-                  v-for="(val, index) in section2.img"
-                  :key="index"
-                  :src="val.img"
-                  :alt="val.alt"
+                  id="mobileImgStyle"
+                  src="img/section1/Vector Smart Object.png"
+                  alt="Responsive image_mobile"
                 />
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <!-- Awesome apps features -->
-      <div class="section3">
-        <div class="container">
-          <div class="row">
-            <div class="left_large_photo_container col-sm-12 col-md-6">
-              <img :src="section3.img.img" :alt="section3.img.alt" />
-            </div>
-
-            <div class="pr-lg-5 col-sm-12 col-md-6">
-              <div class="d-flex flex-column">
-                <div>
-                  <h2>{{ section3.h2 }}</h2>
-                  <p>{{ section3.p }}</p>
-                </div>
-                <div class="commonContainerImg d-flex flex-column pt-4">
-                  <div
-                    v-for="(val, index) in section3.data"
+        <!-- Trusted by companies like -->
+        <div class="section2 py-5">
+          <div class="container py-5">
+            <div class="row">
+              <div class="col-sm-12">
+                <p class="text-center font-weight-bold text-secondary">
+                  Trusted by companies like
+                </p>
+              </div>
+              <div class="col-sm-12">
+                <div
+                  class="trust_likeContainer d-flex align-items-center justify-content-center flex-md-row flex-wrap"
+                >
+                  <img
+                    v-for="(val, index) in section2.img"
                     :key="index"
-                    class="p-3 d-flex flex-row"
+                    :src="val.img"
+                    :alt="val.alt"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Awesome apps features -->
+        <div class="section3">
+          <div class="container">
+            <div class="row">
+              <div class="left_large_photo_container col-sm-12 col-md-6">
+                <img :src="section3.img.img" :alt="section3.img.alt" />
+              </div>
+
+              <div class="pr-lg-5 col-sm-12 col-md-6">
+                <div class="d-flex flex-column">
+                  <div>
+                    <h2>{{ section3.h2 }}</h2>
+                    <p>{{ section3.p }}</p>
+                  </div>
+                  <div class="commonContainerImg d-flex flex-column pt-4">
+                    <div
+                      v-for="(val, index) in section3.data"
+                      :key="index"
+                      class="p-3 d-flex flex-row"
+                    >
+                      <div class="pr-4">
+                        <img :src="val.img" :alt="val.alt" />
+                      </div>
+                      <div class="d-flex flex-column">
+                        <h5>{{ val.h5 }}</h5>
+                        <p>{{ val.p }}</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Smart ideas that you may love these anytime & anywhere -->
+        <div class="section4 py-4">
+          <div class="container">
+            <div class="row">
+              <div class="py-3 px-5 col-xl-12">
+                <div
+                  class="sc4UnderContainer d-flex flex-row justify-content-center align-items-center flex-md-nowrap flex-sm-wrap flex-wrap"
+                >
+                  <div>
+                    <h2>{{ section4.h2 }}</h2>
+                  </div>
+                  <div
+                    class="d-flex flex-row justify-content-center align-items-center"
                   >
-                    <div class="pr-4">
+                    <p>{{ section4.p }}</p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-xl-12">
+                <div
+                  class="sec4imgCmon px-5 d-flex flex-row justify-content-center align-items-center flex-md-nowrap flex-sm-wrap flex-wrap"
+                >
+                  <div
+                    v-for="(val, index) in section4.data"
+                    :key="index"
+                    class="py-md-3 px-md-5 py-0 px-0 d-flex flex-column"
+                  >
+                    <div class="pt-5 pb-4">
                       <img :src="val.img" :alt="val.alt" />
                     </div>
-                    <div class="d-flex flex-column">
+                    <div>
                       <h5>{{ val.h5 }}</h5>
                       <p>{{ val.p }}</p>
                     </div>
@@ -196,487 +242,452 @@
             </div>
           </div>
         </div>
-      </div>
-      <!-- Smart ideas that you may love these anytime & anywhere -->
-      <div class="section4 py-4">
-        <div class="container">
-          <div class="row">
-            <div class="py-3 px-5 col-xl-12">
-              <div
-                class="sc4UnderContainer d-flex flex-row justify-content-center align-items-center flex-md-nowrap flex-sm-wrap flex-wrap"
-              >
-                <div>
-                  <h2>{{ section4.h2 }}</h2>
-                </div>
-                <div
-                  class="d-flex flex-row justify-content-center align-items-center"
-                >
-                  <p>{{ section4.p }}</p>
-                </div>
+        <!-- Designed and build by latest code integration -->
+        <div class="section5 py-4 border-bottom">
+          <div class="pb-3 container">
+            <div class="sec5RowCont row">
+              <div class="px-5 py-2 sec5ImgCont col-md-6 col-sm-12">
+                <img
+                  src="img/section5/design and build.png"
+                  alt="design and build"
+                />
               </div>
-            </div>
 
-            <div class="col-xl-12">
-              <div
-                class="sec4imgCmon px-5 d-flex flex-row justify-content-center align-items-center flex-md-nowrap flex-sm-wrap flex-wrap"
-              >
+              <div class="px-5 py-2 col-md-6 col-sm-12">
                 <div
-                  v-for="(val, index) in section4.data"
-                  :key="index"
-                  class="py-md-3 px-md-5 py-0 px-0 d-flex flex-column"
-                >
-                  <div class="pt-5 pb-4">
-                    <img :src="val.img" :alt="val.alt" />
-                  </div>
-                  <div>
-                    <h5>{{ val.h5 }}</h5>
-                    <p>{{ val.p }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Designed and build by latest code integration -->
-      <div class="section5 py-4 border-bottom">
-        <div class="pb-3 container">
-          <div class="sec5RowCont row">
-            <div class="px-5 py-2 sec5ImgCont col-md-6 col-sm-12">
-              <img
-                src="img/section5/design and build.png"
-                alt="design and build"
-              />
-            </div>
-
-            <div class="px-5 py-2 col-md-6 col-sm-12">
-              <div
-                class="d-flex flex-column align-items-center justify-content-center"
-              >
-                <h2>Designed and build by latest code integration</h2>
-                <p class="py-2">
-                  The rise of mobile devices transforms the way we consume
-                  information entirely and the world's most elevant channels
-                  such as Facebook.
-                </p>
-                <a href=""
-                  ><button class="Sec5learnMoreBtn">Learn more</button></a
-                >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Why you should choose our app -->
-      <div class="section6 pt-5">
-        <div class="container pt-5">
-          <div class="sec6ComonCont row">
-            <div class="pb-4 px-sm-5 px-1 sec6-txt-cont col-sm-12">
-              <h2 class="text-center px-sm-5 px-0">
-                Why you should choose our app
-              </h2>
-              <p class="text-center px-sm-5 px-0">
-                The rise of mobile devices transforms the way we consume
-                information entirely and the world's most elevant channels such
-                as Facebook.
-              </p>
-            </div>
-
-            <div class="col-sm-12">
-              <div
-                class="cmnUnderSec6 d-flex flex-row align-items-center justify-content-center flex-md-nowrap flex-wrap"
-              >
-                <div
-                  v-for="(val, index) in section6.data1"
-                  :key="index"
                   class="d-flex flex-column align-items-center justify-content-center"
                 >
-                  <div>
-                    <img :src="val.img" :alt="val.alt" />
-                  </div>
-                  <div
-                    class="d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <h5>{{ val.h5 }}</h5>
-                    <p class="text-center">{{ val.p }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-sm-12">
-              <div
-                class="cmnUnderSec6 d-flex flex-row align-items-center justify-content-center flex-md-nowrap flex-wrap"
-              >
-                <div
-                  v-for="(val, index) in section6.data2"
-                  :key="index"
-                  class="d-flex flex-column align-items-center justify-content-center"
-                >
-                  <div>
-                    <img :src="val.img" :alt="val.alt" />
-                  </div>
-                  <div
-                    class="d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <h5>{{ val.h5 }}</h5>
-                    <p class="text-center">{{ val.p }}</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Ultimate featues that we build -->
-      <div class="section7 pt-5 pb-4">
-        <div class="container pt-5">
-          <div class="row">
-            <div
-              class="pl-5 sec7CmnSlt1 col-md-6 col-sm-12 order-md-1 order-sm-2 order-2"
-            >
-              <div
-                class="pl-sm-5 p-0 d-flex flex-column align-items-start justify-content-center"
-              >
-                <div class="pb-4 pr-5 d-flex flex-column">
-                  <h2 class="text-left">Ultimate featues that we build</h2>
-                  <p class="text-left">
+                  <h2>Designed and build by latest code integration</h2>
+                  <p class="py-2">
                     The rise of mobile devices transforms the way we consume
-                    information entirely.
+                    information entirely and the world's most elevant channels
+                    such as Facebook.
                   </p>
-                </div>
-
-                <div class="mb-4 d-flex flex-column">
-                  <div
-                    class="sec7CmnH5_p d-flex flex-row flex-md-nowrap flex-wrap"
+                  <a href=""
+                    ><button class="Sec5learnMoreBtn">Learn more</button></a
                   >
-                    <div
-                      v-for="(val, index) in section7.data1"
-                      :key="index"
-                      class="mr-lg-5 mr-md-4 mr-0"
-                    >
-                      <div>
-                        <img :src="val.img" :alt="val.alt" />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h5>{{ val.h5 }}</h5>
-                        <p>{{ val.p }}</p>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div
-                    class="mt-5 sec7CmnH5_p d-flex flex-row flex-md-nowrap flex-wrap"
-                  >
-                    <div
-                      v-for="(val, index) in section7.data2"
-                      :key="index"
-                      class="mr-lg-5 mr-md-4 mr-0"
-                    >
-                      <div>
-                        <img :src="val.img" :alt="val.alt" />
-                      </div>
-                      <div class="d-flex flex-column">
-                        <h5>{{ val.h5 }}</h5>
-                        <p>{{ val.p }}</p>
-                      </div>
-                    </div>
-                  </div>
                 </div>
-
-                <a href="">See all</a>
               </div>
-            </div>
-
-            <div
-              class="pb-3 sec7CmnSlt2 col-md-6 col-sm-12 order-md-2 order-sm-1 order-1"
-            >
-              <img
-                src="img/section7/section7 background.png"
-                alt="Ultimate featues"
-              />
             </div>
           </div>
         </div>
-      </div>
-      <!-- Get awesome features, without extra charges -->
-      <div class="section8 py-5 mb-5">
-        <div class="container py-4">
-          <div class="row">
-            <div class="sec8-txt-cont col-sm-12">
-              <div
-                class="d-flex flex-column align-items-center justify-content-center"
-              >
-                <h2 class="text-center">
-                  Get awesome features, without extra charges
+        <!-- Why you should choose our app -->
+        <div class="section6 pt-5">
+          <div class="container pt-5">
+            <div class="sec6ComonCont row">
+              <div class="pb-4 px-sm-5 px-1 sec6-txt-cont col-sm-12">
+                <h2 class="text-center px-sm-5 px-0">
+                  Why you should choose our app
                 </h2>
-                <p class="text-center">
+                <p class="text-center px-sm-5 px-0">
                   The rise of mobile devices transforms the way we consume
                   information entirely and the world's most elevant channels
                   such as Facebook.
                 </p>
-                <ul class="sec8Ul d-flex my-5 py-2">
-                  <li class="list-unstyled">
-                    <a href="" class="px-4 py-2">Monthly</a>
+              </div>
+
+              <div class="col-sm-12">
+                <div
+                  class="cmnUnderSec6 d-flex flex-row align-items-center justify-content-center flex-md-nowrap flex-wrap"
+                >
+                  <div
+                    v-for="(val, index) in section6.data1"
+                    :key="index"
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div>
+                      <img :src="val.img" :alt="val.alt" />
+                    </div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5>{{ val.h5 }}</h5>
+                      <p class="text-center">{{ val.p }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-sm-12">
+                <div
+                  class="cmnUnderSec6 d-flex flex-row align-items-center justify-content-center flex-md-nowrap flex-wrap"
+                >
+                  <div
+                    v-for="(val, index) in section6.data2"
+                    :key="index"
+                    class="d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div>
+                      <img :src="val.img" :alt="val.alt" />
+                    </div>
+                    <div
+                      class="d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <h5>{{ val.h5 }}</h5>
+                      <p class="text-center">{{ val.p }}</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Ultimate featues that we build -->
+        <div class="section7 pt-5 pb-4">
+          <div class="container pt-5">
+            <div class="row">
+              <div
+                class="pl-5 sec7CmnSlt1 col-md-6 col-sm-12 order-md-1 order-sm-2 order-2"
+              >
+                <div
+                  class="pl-sm-5 p-0 d-flex flex-column align-items-start justify-content-center"
+                >
+                  <div class="pb-4 pr-5 d-flex flex-column">
+                    <h2 class="text-left">Ultimate featues that we build</h2>
+                    <p class="text-left">
+                      The rise of mobile devices transforms the way we consume
+                      information entirely.
+                    </p>
+                  </div>
+
+                  <div class="mb-4 d-flex flex-column">
+                    <div
+                      class="sec7CmnH5_p d-flex flex-row flex-md-nowrap flex-wrap"
+                    >
+                      <div
+                        v-for="(val, index) in section7.data1"
+                        :key="index"
+                        class="mr-lg-5 mr-md-4 mr-0"
+                      >
+                        <div>
+                          <img :src="val.img" :alt="val.alt" />
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>{{ val.h5 }}</h5>
+                          <p>{{ val.p }}</p>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div
+                      class="mt-5 sec7CmnH5_p d-flex flex-row flex-md-nowrap flex-wrap"
+                    >
+                      <div
+                        v-for="(val, index) in section7.data2"
+                        :key="index"
+                        class="mr-lg-5 mr-md-4 mr-0"
+                      >
+                        <div>
+                          <img :src="val.img" :alt="val.alt" />
+                        </div>
+                        <div class="d-flex flex-column">
+                          <h5>{{ val.h5 }}</h5>
+                          <p>{{ val.p }}</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <a href="">See all</a>
+                </div>
+              </div>
+
+              <div
+                class="pb-3 sec7CmnSlt2 col-md-6 col-sm-12 order-md-2 order-sm-1 order-1"
+              >
+                <img
+                  src="img/section7/section7 background.png"
+                  alt="Ultimate featues"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Get awesome features, without extra charges -->
+        <div class="section8 py-5 mb-5">
+          <div class="container py-4">
+            <div class="row">
+              <div class="sec8-txt-cont col-sm-12">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <h2 class="text-center">
+                    Get awesome features, without extra charges
+                  </h2>
+                  <p class="text-center">
+                    The rise of mobile devices transforms the way we consume
+                    information entirely and the world's most elevant channels
+                    such as Facebook.
+                  </p>
+                  <ul class="sec8Ul d-flex my-5 py-2">
+                    <li class="list-unstyled">
+                      <a href="" class="px-4 py-2">Monthly</a>
+                    </li>
+                    <li class="list-unstyled">
+                      <a href="" class="px-4 py-2">Annually</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="col-sm-12">
+                <div
+                  class="d-flex flex-row align-items-center justify-content-center flex-wrap"
+                >
+                  <div
+                    class="mr-md-3 mr-0 mb-5 uPsec8UPtxt2 d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div
+                      class="py-4 px-5 mb-3 sec8UPtxt1 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <p class="mb-1"><span>$0</span>/month</p>
+                      <h5>Business class</h5>
+                      <p>For small teams or office</p>
+                    </div>
+
+                    <div
+                      class="mt-2 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <ul class="p-1 sec8Ul2">
+                        <li>Drag & Drop Builder</li>
+                        <li>1,000's of Templates</li>
+                        <li>Blog Support Tools</li>
+                        <li>eCommerce Store</li>
+                        <li class="my-2 mt-4">
+                          <a href="#">Start free trail</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+
+                  <div
+                    class="ml-md-3 ml-0 uPsec8UPtxt1 d-flex flex-column align-items-center justify-content-center"
+                  >
+                    <div
+                      class="py-4 px-5 mb-3 sec8UPtxt1 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <p class="mb-1"><span>$99</span>/month</p>
+                      <h5>Pro Master</h5>
+                      <p>For best opportunities</p>
+                    </div>
+
+                    <div
+                      class="mt-2 d-flex flex-column align-items-center justify-content-center"
+                    >
+                      <ul class="p-1 sec8Ul2">
+                        <li>Drag & Drop Builder</li>
+                        <li>1,000's of Templates</li>
+                        <li>Blog Support Tools</li>
+                        <li>eCommerce Store</li>
+                        <li class="my-2 mt-4 mb-4">
+                          <a href="#">Subscribe now</a>
+                        </li>
+                        <a class="p-3 font-weight-bold" href="#"
+                          >Or Start 14 days trail</a
+                        >
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Meet Client Setisfaction by using product -->
+        <div class="section9 border-top my-5">
+          <div class="container py-5 my-5">
+            <div class="sc9Udr row py-4 my-4">
+              <div class="col-md-6 col-sm-12 mb-4">
+                <img
+                  src="img/section9/satidfied client.png"
+                  alt="satidfied client"
+                />
+              </div>
+              <div class="col-md-6 col-sm-12">
+                <h2>Meet Client Setisfaction by using product</h2>
+                <p>
+                  The rise of mobile devices transforms the way we consume
+                  information entirely and the world's most elevant channels
+                  such as Facebook.
+                </p>
+                <p>
+                  <img
+                    id="ratingStarsec9"
+                    src="img/section9/star star star star star.png"
+                    alt="rating"
+                  />
+                </p>
+                <h5>User friendly & Customizable</h5>
+                <p>
+                  Bring to the table win-win survival strategies to ensure
+                  proactive domination. At the end of the day, going forward, a
+                  new normal that has evolved from generation X is on the runway
+                  heading towards a streamlined cloud solution. User generated
+                  content in real-time will have multiple touchpoints for
+                  offshoring.
+                </p>
+                <div
+                  class="d-flex flex-row pt-2 mt-5 w-100 justify-content-start align-items-center"
+                >
+                  <div>
+                    <img
+                      id="singleClientSec9"
+                      src="img/section9/single client.png"
+                      alt="single client"
+                    />
+                  </div>
+
+                  <div
+                    class="mr-5 d-flex flex-column pl-4 align-items-start justify-content-center"
+                  >
+                    <h5 class="m-0 p-0">Zoltan Nemeth</h5>
+                    <p class="m-0 p-0">CEO of Pixler Lab</p>
+                  </div>
+
+                  <ul class="clientUl d-flex flex-row align-self-end m-0">
+                    <li>
+                      <img src="img/section9/left arrow.png" alt="left arrow" />
+                    </li>
+                    <li></li>
+                    <li>
+                      <a href="#"
+                        ><img
+                          src="img/section9/right arrow.png"
+                          alt="right arrow"
+                      /></a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Frequently asked questions -->
+        <div class="section10 py-4 mb-5 border-bottom">
+          <div class="container pt-4">
+            <div class="row">
+              <div class="sec8-txt-cont col-sm-12">
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <h2 class="text-center mb-3">Frequently asked questions</h2>
+                  <p class="text-center">
+                    The rise of mobile devices transforms the way we consume
+                    information entirely and the world's most elevant channels
+                    such as Facebook.
+                  </p>
+                  <ul class="ulOfSec10 p-3">
+                    <li>
+                      <h5 class="mb-3">
+                        How to contact with riders emergency?
+                      </h5>
+                      <p>
+                        Leverage agile frameworks to provide a robust synopsis
+                        for high level overviews. Iterative approaches to
+                        corporate strategy foster collaborative thinking to
+                        further the overall value proposition. Organically grow
+                        the holistic world view of disruptive innovation via
+                        workplace diversity and empowerment. Bring to the table
+                        win-win survival strategies to ensure proactive
+                        domination. At the end of the day, going forward, a new
+                        normal that has evolved from generation X is on the
+                        runway heading towards a streamlined cloud solution.
+                        User generated content in real-time will have multiple
+                        touchpoints for offshoring.
+                      </p>
+                    </li>
+                    <li>
+                      <h5>
+                        App installation failed, how to update system
+                        information?
+                      </h5>
+                      <img src="img/section10/Plus.png" alt="Plus" />
+                    </li>
+                    <li>
+                      <h5>Website reponse taking time, how to improve?</h5>
+                      <img src="img/section10/Plus.png" alt="Plus" />
+                    </li>
+                    <li>
+                      <h5>New update fixed all bug and issues</h5>
+                      <img src="img/section10/Plus.png" alt="Plus" />
+                    </li>
+                    <li>
+                      <h5>How to contact with riders emergency?</h5>
+                      <img src="img/section10/Plus.png" alt="Plus" />
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Download your App now -->
+        <div class="section11 pt-1 mb-3">
+          <div class="container pt-4">
+            <div class="row">
+              <div
+                class="sec8-txt-cont1 col-md-6 col-sm-12 order-md-1 order-sm-2 order-2"
+              >
+                <div
+                  class="d-flex flex-column align-items-center justify-content-center"
+                >
+                  <h2 class="text-center mb-4">Download your App now</h2>
+                  <p class="text-center mb-4">
+                    The rise of mobile devices transforms the way we consume
+                    information entirely and the world's most elevant channels
+                    such as Facebook.
+                  </p>
+                  <img src="img/section11/get app banner.png" alt="get app" />
+                </div>
+              </div>
+              <div
+                class="sec8-txt-cont col-md-6 col-sm-12 order-md-2 order-sm-1 order-1 mb-sm-0 mb-3"
+              >
+                <img src="img/section11/download bg.png" alt="download bg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- AppLab -->
+        <div class="section12">
+          <div class="container py-3">
+            <div class="row py-3">
+              <div
+                class="py-5 bgFooter1 col-sm-12 d-flex flex-column justify-content-center align-items-center"
+              >
+                <a href="#"
+                  ><img src="img/nav/AppLab@2x.png" alt="AppLab" />
+                </a>
+
+                <ul class="py-3 nav d-flex flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link text-light active" href="#">Home</a>
                   </li>
-                  <li class="list-unstyled">
-                    <a href="" class="px-4 py-2">Annually</a>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Key Features</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Pricing</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">Testiminial</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-light" href="#">FAQ</a>
                   </li>
                 </ul>
-              </div>
-            </div>
-            <div class="col-sm-12">
-              <div
-                class="d-flex flex-row align-items-center justify-content-center flex-wrap"
-              >
-                <div
-                  class="mr-md-3 mr-0 mb-5 uPsec8UPtxt2 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <div
-                    class="py-4 px-5 mb-3 sec8UPtxt1 d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <p class="mb-1"><span>$0</span>/month</p>
-                    <h5>Business class</h5>
-                    <p>For small teams or office</p>
-                  </div>
 
-                  <div
-                    class="mt-2 d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <ul class="p-1 sec8Ul2">
-                      <li>Drag & Drop Builder</li>
-                      <li>1,000's of Templates</li>
-                      <li>Blog Support Tools</li>
-                      <li>eCommerce Store</li>
-                      <li class="my-2 mt-4">
-                        <a href="#">Start free trail</a>
-                      </li>
-                    </ul>
-                  </div>
-                </div>
-
-                <div
-                  class="ml-md-3 ml-0 uPsec8UPtxt1 d-flex flex-column align-items-center justify-content-center"
-                >
-                  <div
-                    class="py-4 px-5 mb-3 sec8UPtxt1 d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <p class="mb-1"><span>$99</span>/month</p>
-                    <h5>Pro Master</h5>
-                    <p>For best opportunities</p>
-                  </div>
-
-                  <div
-                    class="mt-2 d-flex flex-column align-items-center justify-content-center"
-                  >
-                    <ul class="p-1 sec8Ul2">
-                      <li>Drag & Drop Builder</li>
-                      <li>1,000's of Templates</li>
-                      <li>Blog Support Tools</li>
-                      <li>eCommerce Store</li>
-                      <li class="my-2 mt-4 mb-4">
-                        <a href="#">Subscribe now</a>
-                      </li>
-                      <a class="p-3 font-weight-bold" href="#"
-                        >Or Start 14 days trail</a
-                      >
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Meet Client Setisfaction by using product -->
-      <div class="section9 border-top my-5">
-        <div class="container py-5 my-5">
-          <div class="sc9Udr row py-4 my-4">
-            <div class="col-md-6 col-sm-12 mb-4">
-              <img
-                src="img/section9/satidfied client.png"
-                alt="satidfied client"
-              />
-            </div>
-            <div class="col-md-6 col-sm-12">
-              <h2>Meet Client Setisfaction by using product</h2>
-              <p>
-                The rise of mobile devices transforms the way we consume
-                information entirely and the world's most elevant channels such
-                as Facebook.
-              </p>
-              <p>
-                <img
-                  id="ratingStarsec9"
-                  src="img/section9/star star star star star.png"
-                  alt="rating"
-                />
-              </p>
-              <h5>User friendly & Customizable</h5>
-              <p>
-                Bring to the table win-win survival strategies to ensure
-                proactive domination. At the end of the day, going forward, a
-                new normal that has evolved from generation X is on the runway
-                heading towards a streamlined cloud solution. User generated
-                content in real-time will have multiple touchpoints for
-                offshoring.
-              </p>
-              <div
-                class="d-flex flex-row pt-2 mt-5 w-100 justify-content-start align-items-center"
-              >
-                <div>
-                  <img
-                    id="singleClientSec9"
-                    src="img/section9/single client.png"
-                    alt="single client"
-                  />
-                </div>
-
-                <div
-                  class="mr-5 d-flex flex-column pl-4 align-items-start justify-content-center"
-                >
-                  <h5 class="m-0 p-0">Zoltan Nemeth</h5>
-                  <p class="m-0 p-0">CEO of Pixler Lab</p>
-                </div>
-
-                <ul class="clientUl d-flex flex-row align-self-end m-0">
-                  <li>
-                    <img src="img/section9/left arrow.png" alt="left arrow" />
-                  </li>
-                  <li></li>
-                  <li>
-                    <a href="#"
-                      ><img
-                        src="img/section9/right arrow.png"
-                        alt="right arrow"
+                <ul class="py-4 nav d-flex flex-row">
+                  <li class="nav-item">
+                    <a class="nav-link text-white active" href="#"
+                      ><img src="img/section12/medias.png" alt="medias"
                     /></a>
                   </li>
                 </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Frequently asked questions -->
-      <div class="section10 py-4 mb-5 border-bottom">
-        <div class="container pt-4">
-          <div class="row">
-            <div class="sec8-txt-cont col-sm-12">
-              <div
-                class="d-flex flex-column align-items-center justify-content-center"
-              >
-                <h2 class="text-center mb-3">Frequently asked questions</h2>
-                <p class="text-center">
-                  The rise of mobile devices transforms the way we consume
-                  information entirely and the world's most elevant channels
-                  such as Facebook.
+
+                <p class="text-muted">
+                  Copyright&copy; Afsinur Rahman 2021. All right reserved
                 </p>
-                <ul class="ulOfSec10 p-3">
-                  <li>
-                    <h5 class="mb-3">How to contact with riders emergency?</h5>
-                    <p>
-                      Leverage agile frameworks to provide a robust synopsis for
-                      high level overviews. Iterative approaches to corporate
-                      strategy foster collaborative thinking to further the
-                      overall value proposition. Organically grow the holistic
-                      world view of disruptive innovation via workplace
-                      diversity and empowerment. Bring to the table win-win
-                      survival strategies to ensure proactive domination. At the
-                      end of the day, going forward, a new normal that has
-                      evolved from generation X is on the runway heading towards
-                      a streamlined cloud solution. User generated content in
-                      real-time will have multiple touchpoints for offshoring.
-                    </p>
-                  </li>
-                  <li>
-                    <h5>
-                      App installation failed, how to update system information?
-                    </h5>
-                    <img src="img/section10/Plus.png" alt="Plus" />
-                  </li>
-                  <li>
-                    <h5>Website reponse taking time, how to improve?</h5>
-                    <img src="img/section10/Plus.png" alt="Plus" />
-                  </li>
-                  <li>
-                    <h5>New update fixed all bug and issues</h5>
-                    <img src="img/section10/Plus.png" alt="Plus" />
-                  </li>
-                  <li>
-                    <h5>How to contact with riders emergency?</h5>
-                    <img src="img/section10/Plus.png" alt="Plus" />
-                  </li>
-                </ul>
               </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- Download your App now -->
-      <div class="section11 pt-1 mb-3">
-        <div class="container pt-4">
-          <div class="row">
-            <div
-              class="sec8-txt-cont1 col-md-6 col-sm-12 order-md-1 order-sm-2 order-2"
-            >
-              <div
-                class="d-flex flex-column align-items-center justify-content-center"
-              >
-                <h2 class="text-center mb-4">Download your App now</h2>
-                <p class="text-center mb-4">
-                  The rise of mobile devices transforms the way we consume
-                  information entirely and the world's most elevant channels
-                  such as Facebook.
-                </p>
-                <img src="img/section11/get app banner.png" alt="get app" />
-              </div>
-            </div>
-            <div
-              class="sec8-txt-cont col-md-6 col-sm-12 order-md-2 order-sm-1 order-1 mb-sm-0 mb-3"
-            >
-              <img src="img/section11/download bg.png" alt="download bg" />
-            </div>
-          </div>
-        </div>
-      </div>
-      <!-- AppLab -->
-      <div class="section12">
-        <div class="container py-3">
-          <div class="row py-3">
-            <div
-              class="py-5 bgFooter1 col-sm-12 d-flex flex-column justify-content-center align-items-center"
-            >
-              <a href="#"><img src="img/nav/AppLab@2x.png" alt="AppLab" /> </a>
-
-              <ul class="py-3 nav d-flex flex-row">
-                <li class="nav-item">
-                  <a class="nav-link text-light active" href="#">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Key Features</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">Testiminial</a>
-                </li>
-                <li class="nav-item">
-                  <a class="nav-link text-light" href="#">FAQ</a>
-                </li>
-              </ul>
-
-              <ul class="py-4 nav d-flex flex-row">
-                <li class="nav-item">
-                  <a class="nav-link text-white active" href="#"
-                    ><img src="img/section12/medias.png" alt="medias"
-                  /></a>
-                </li>
-              </ul>
-
-              <p class="text-muted">
-                Copyright&copy; Afsinur Rahman 2021. All right reserved
-              </p>
             </div>
           </div>
         </div>

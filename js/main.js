@@ -33,8 +33,6 @@ const app = {
                 this.section6 = data.section6;
                 this.section7 = data.section7;
 
-                document.querySelector("#preloader").style.display = "none";
-
                 this.section1.markCheck = 1;
               })
               .catch((err) => {
@@ -59,6 +57,8 @@ const app = {
           watermark.innerHTML = this.data.mark;
 
           Object.assign(watermark.style, this.data.styleObj);
+
+          document.querySelector("#preloader").style.display = "none";
 
           setInterval(() => {
             Object.assign(watermark.style, this.data.styleObj);
